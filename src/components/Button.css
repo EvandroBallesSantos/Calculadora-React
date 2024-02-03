@@ -1,0 +1,36 @@
+/* criando uma variável em css da forma mais raiz */
+:root {
+    --bg-button: #f0f0f0;
+    --border-button: solid 1px #888;
+}
+
+.button {
+    font-size: 1.4em;/* tamanho da fonte */
+    font-weight: bold;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none; /* é o efeito que aparece quando o botão fica ou é pressionado */
+}
+
+.button:active { /* modificando a cor quando o botão é clicado */
+    background-color: #ccc;
+}
+
+.button.double { /* criando uma classe para botões que ocuparão 2 colunas */
+    grid-column: span 2;
+}
+
+.button.triple { /* criando uma classe para botões que ocuparão 3 colunas */
+    grid-column: span 3;
+}
+
+.button.operation { /* criandro uma classe para os botões operadores */
+    background-color: #fa8231;
+    color: #fff; /* cor da fonte */
+}
+
+.button.button.operation:active {
+    background-color: #fa8231cc;
+}

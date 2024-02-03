@@ -1,0 +1,11 @@
+.display {
+    grid-column: span 4; /* dizendo quanto de espaço o componente deve ocupar */
+    background-color: #0004;
+
+    display: flex; /* tornando flex a parte interna desse componente */
+    justify-content: flex-end;/* alinhando o componente a direita */
+    align-items: center; /* alinhando na Vertical/eixo Y */
+    padding: 20px; /* deixando um espaço afastando das laterais */
+    font-size: 2.1em; /* ajustando o tamanho da fonte */
+    overflow: hidden; /* grantindo que qualquer coisa que esteja fora não apareça */
+}

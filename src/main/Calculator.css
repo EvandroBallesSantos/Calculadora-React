@@ -1,0 +1,11 @@
+.calculator {
+    height: 320px; /* Altura */
+    width: 235px; /* Largura */
+    border-radius: 5px; /* Canto curvado */
+    overflow: hidden; /* esconder tudo além d calculadora */
+    /* background-color: red; Cor de fundo provisóra */
+
+    display: grid;/* para transformar em uma grade */
+    grid-template-columns: repeat(4, 25%);/* setando 4 colunas cada uma ocupando 25% */
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
+}
